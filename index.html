@@ -1,0 +1,132 @@
+<!--
+  Arquivo: psicobr_linkpage.html (versão com GIF animado)
+  Instruções:
+  - O GIF está sendo carregado diretamente da URL fornecida.
+  - Basta abrir este arquivo no navegador ou hospedar online.
+--><!doctype html>
+
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PsicoBR — Links</title>
+  <style>
+    :root{
+      --bg: #000;
+      --accent: #e8d7c8;
+      --glass: rgba(255,255,255,0.04);
+      --btn-padding: 18px 28px;
+      --container-width: 420px;
+      --radius: 16px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    html,body{height:100%;}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--accent);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:32px 16px;
+    }.card{
+  width:100%;
+  max-width:var(--container-width);
+  text-align:center;
+  padding:40px 20px;
+  box-sizing:border-box;
+}
+
+.avatar-wrap{
+  width:220px;
+  height:220px;
+  margin:0 auto 28px;
+  border-radius:50%;
+  padding:6px;
+  background: linear-gradient(180deg, rgba(232,215,200,0.06), rgba(232,215,200,0.02));
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow: 0 0 0 2px rgba(232,215,200,0.06) inset;
+  overflow:hidden;
+}
+
+.avatar{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:50%;
+  display:block;
+  background: #111;
+}
+
+h1{
+  margin:6px 0 18px;
+  font-size:22px;
+  letter-spacing:0.4px;
+  color:var(--accent);
+}
+p.lead{
+  margin:0 0 20px;
+  opacity:0.9;
+  font-size:14px;
+}
+
+.btn{
+  display:inline-block;
+  text-decoration:none;
+  border-radius:14px;
+  padding:var(--btn-padding);
+  background:transparent;
+  color:var(--accent);
+  border:2px solid rgba(232,215,200,0.18);
+  min-width:260px;
+  box-sizing:border-box;
+  font-weight:700;
+  font-size:20px;
+  transition:transform .14s ease, box-shadow .14s ease, background .14s ease;
+}
+.btn .sub{
+  display:block;
+  font-weight:400;
+  font-size:13px;
+  opacity:0.9;
+  margin-top:6px;
+}
+.btn:active{ transform:translateY(2px); }
+.btn:hover{
+  box-shadow:0 8px 30px rgba(0,0,0,0.6);
+  transform:translateY(-4px);
+  background: rgba(232,215,200,0.02);
+}
+
+footer{
+  margin-top:30px;
+  opacity:0.6;
+  font-size:12px;
+}
+
+@media (max-width:420px){
+  .avatar-wrap{ width:180px; height:180px; }
+  .btn{ min-width:200px; padding:14px 20px; font-size:18px }
+}
+
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="avatar-wrap">
+      <img class="avatar" src="https://media1.tenor.com/m/u31W1dxQRrEAAAAC/ashley-graves-tcoaal.gif" alt="Avatar PsicoBR">
+    </div><h1>PsicoBR</h1>
+<p class="lead">Conecte-se comigo no Discord</p>
+
+<a class="btn" href="https://discord.gg/X5wurcRG" target="_blank" rel="noopener noreferrer">
+  Discord
+  <span class="sub">discord.gg/X5wurcRG</span>
+</a>
+
+<footer>Feito por você • Minimal • Dark</footer>
+
+  </div>
+</body>
+</html>
